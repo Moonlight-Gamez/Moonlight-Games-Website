@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Games | Verify</title>
+    <link rel="icon" href="Assets/Images/logo.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #202020 !important;
+        }
+
+        .message {
+            margin-top: 10px;
+            font-size: 14px;
+            color: green;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+            <img src="Assets/Images/logo.png" alt="logo">
+
+            <h2 class="loginHeader">Verify Your Email</h2>
+
+            <form id="verificationForm" class="form" name="verificationForm">
+                <p class="codeinfo">To complete account setup, you need to verify <strong>m*************h@gmail.com</strong>. Please check your email and then enter the give code.</p>
+        
+                <input type="text" id="verificationCode" class="loginInput" placeholder="Code" name="verificationCode">
+        
+                <button type="submit" class="submitbutton" style="margin-top: 20px;">Continue</button>
+        
+                <button id="resendcode" class="btn"><span class="_link">Resend code</span></button>
+        
+                <button id="changeemail" class="btn" onclick="window.location.href='signup.html'"><span class="_link">Change email</span></button>
+        
+                <p class="alttext">Already have an account? <a href="login.html" class="_link">Sign in</a></p>
+        
+                <p class="message" id="message"></p>
+            </form>
+    </div>
+
+    <script src="verification.js"></script>
+</body>
+</html>

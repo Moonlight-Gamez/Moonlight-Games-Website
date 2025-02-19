@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moonlight Games Store | Sign in</title>
+    <link rel="icon" href="Assets/Images/logo.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #161619 !important;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <img src="Assets/Images/logo.png" alt="logo">
+        <h2 class="loginHeader">Sign in</h2>
+        <form id="loginForm" class="form" name="loginForm">
+            <label for="loginEmail" class="label">Email:</label>
+            <input type="email" id="loginEmail" class="loginInput" name="loginEmail" required>
+
+            <label for="loginPassword" class="label">Password:</label>
+            <input type="password" id="loginPassword" class="loginInput" name="loginPassword" required>
+
+            <a href="#" style="text-decoration: none;"><span class="_link">Forgot Password?</span></a>
+
+            <button type="submit" class="submitbutton" style="margin-top: 10px;">Sign in</button>
+        </form>
+        <p class="alttext">Don't have an account? <a href="signup.html" class="_link">Create Account</a></p>
+    </div>
+
+    <script src="login.js"></script>
+    
+</body>
+</html>
